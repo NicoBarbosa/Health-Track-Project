@@ -1,0 +1,163 @@
+* {  
+    margin: 0;
+    padding: 0px; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E5EAFA;
+}
+
+/* Menu */
+a {
+    text-decoration: none;
+    color: #E5EAFA
+}
+
+a:hover, .navbar-brand:hover {
+    color: #F05365;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    padding-right: 50px;
+}
+
+.menu li {
+    letter-spacing: 3px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.navbar {
+    box-shadow: 0px 0px 5px  #F05365;
+}
+
+/* Menu em 360px min */
+@media screen and (min-width:360px) {
+    .menu {
+        margin: 0px;
+        padding-right: 0px;
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    .menu li {
+        margin-top: 0px;
+    }
+}
+
+/* Menu em 320px max */
+@media screen and (max-width:320px) {
+    .menu {
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    .navbar-brand {
+        margin-left: 0px;
+        font-size: 18px;
+        
+    }
+
+    .menu li {
+        letter-spacing: 3px;
+        margin-left: 13px;
+        margin-top: 0px;
+    }
+}
+
+h1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #F05365;
+    text-align: center;
+    margin: 0;
+    color: #E5EAFA;
+    font-size: 27px;
+    border-radius: 2px;
+}
+
+.list-group {
+    max-width: 900px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+    border-radius: 15px;
+    padding: 3px;
+}
+
+.list-group-item {
+    margin-bottom: 3px;
+}
+
+/* botões pen e trash*/
+.pen img, .trash img{
+    border: 1px solid #F05365;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50px;
+    background-color: #F05365;
+}
+
+img:hover {
+    transition: 0.5s;
+    width: 55px;
+}
+
+.pen {
+    position: fixed;
+    left: 90.5%;
+    top: 90%;
+}
+
+.trash {
+    position: fixed;
+    left: 90.5%;
+    top: 83.5%;
+}
+
+@media screen and (max-width: 414px) {
+    .pen img, .trash img{
+        width: 40px;
+    }
+
+    .trash {
+        position: fixed;
+        left: 85%;
+        top: 90%;
+    }
+
+    .pen {
+        position: fixed;
+        left: 70%;
+        top: 90%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .navbar {
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    
+    .mb-1 {
+        font-size: 15px;
+    }
+
+    small {
+        font-size: 12px;
+    }
+
+}

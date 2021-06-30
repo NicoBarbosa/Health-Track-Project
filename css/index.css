@@ -1,0 +1,253 @@
+* {  
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+body {
+    background-color: #E5EAFA;
+}
+
+/* Menu */
+a {
+    text-decoration: none;
+    color: #E5EAFA
+}
+
+a:hover, .navbar-brand:hover {
+    color: #F05365;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    padding-right: 50px;
+}
+
+.menu li {
+    letter-spacing: 3px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.navbar {
+    box-shadow: 0px 0px 5px  #F05365;
+}
+
+/* Menu em 320px max */
+@media screen and (max-width:320px) {
+    .menu {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar-brand {
+        margin-left: 0px;
+        font-size: 18px;
+    }
+
+    .menu li {
+        letter-spacing: 3px;
+        margin-left: 13px;
+        margin-top: 0px;
+    }
+}
+
+/* Menu em 360px min */
+@media screen and (min-width:360px) {
+    .menu {
+        margin: 0px;
+        padding-right: 0px;
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    .menu li {
+        margin-top: 0px;
+    }
+}
+
+/* Barra de progresso */
+.progress {
+    width: 100%;
+    height: 230px;
+    border-radius: 230px;
+    border: 2px solid #2D2D34;
+    background-color: #E5EAFA;
+}
+
+.passos-progress {
+    width: 230px;
+    left: 50%;
+    position: fixed;
+    top: 35%;
+    transform: translate(-50%, -65%);
+}
+
+.numero_passos {
+    font-size: 24px;
+    margin-left: 55%;
+    margin-right: 50%;
+    color: #2D2D34;
+}
+.meta_passos {
+    font-size: 24px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+[role=progressbar] {
+    background-color: #F05365;
+    border-right: 2px solid #2D2D34;
+}
+
+@media screen and (max-width: 500px) {
+    .progress {
+        height: 150px;
+        border-radius: 19px;
+
+    }
+    
+    .passos-progress {
+        width: 190px;
+        left: 50%;
+        position: fixed;
+        top: 35%;
+        transform: translate(-50%, -65%);
+    }
+    
+    .numero_passos {
+        font-size: 18px;
+    }
+
+    .meta_passos {
+        font-size: 18px;
+    }
+}
+
+/* Container de kcal e bpm */  
+.container1 {
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+    left: 40%;
+    position: fixed;
+    top: 60%;
+    transform: translate(-60%, -40%);
+}
+
+.container2 {
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+    left: 60%;
+    position: fixed;
+    top: 60%;
+    transform: translate(-30%, -40%);
+}
+
+/* KCAL e BPM */
+.kcal {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #2D2D34;
+    background-color: #F05365;
+    border-radius: 50%;
+    text-align: center;
+}
+
+p.p437 {
+    margin-top: 35px;
+    font-size: 45px;
+    margin-bottom: 0px;
+    color: #E5EAFA;
+}
+
+.bpm {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #2D2D34;
+    background-color: #F05365;
+    border-radius: 50%;
+    text-align: center;
+}
+
+p.b124 {
+    margin-top: 35px;
+    font-size: 45px;
+    margin-bottom: 0px;
+    color: #E5EAFA;
+}
+
+/* até 620px */
+@media screen and (max-width: 620px){
+    .container1 {
+        left: 35%;
+        top: 60%;
+        transform: translate(-65%, -40%);
+        max-width: 130px;
+        height: 130px;
+    }
+
+    .container2 {
+        left: 65%;
+        top: 60%;
+        transform: translate(-35%, -40%);
+        max-width: 130px;
+        height: 130px;
+    }
+
+    .kcal {
+        height: 130px;
+    }
+
+    p.p437 {
+        font-size: 30px;
+    }
+     
+    .bpm {
+        height: 130px;
+    }
+
+    p.b124 {
+        font-size: 30px;
+    }
+}
+
+/* botão adicionar */
+.adicionar img{
+    border: 1px solid #F05365;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50px;
+    background-color: #F05365;
+}
+
+.adicionar img:hover {
+    transition: 0.5s;
+    width: 55px;
+}
+
+.adicionar {
+    position: fixed;
+    left: 90%;
+    top: 90%;
+}
+
+@media screen and (max-width: 414px) {
+    .adicionar img{
+        width: 40px;
+    }
+
+    .adicionar {
+        position: fixed;
+        left: 85%;
+        top: 90%;
+    }
+}
